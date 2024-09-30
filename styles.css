@@ -1,0 +1,64 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Container box with 3D effect */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3), 
+                -10px -10px 20px rgba(255, 255, 255, 0.5);
+    transform: perspective(500px) rotateX(10deg) rotateY(-5deg);
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Time display styling */
+#time-display {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.buttons button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+#reset-btn {
+    background-color: #dc3545;
+}
+
+#reset-btn:hover {
+    background-color: #c82333;
+}
+
+/* Add a hover effect to the container to enhance the 3D look */
+.container:hover {
+    transform: perspective(500px) rotateX(5deg) rotateY(5deg);
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.4), 
+                -15px -15px 25px rgba(255, 255, 255, 0.6);
+}
